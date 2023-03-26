@@ -14,51 +14,49 @@ struct ContentView: View {
     @State private var isSelected2 = false
     
     var body: some View {
-        VStack {
-          
-            HStack(spacing: 5) {
+        
+        HStack(spacing: 5) {
+            
+            SelectedMaster(
+                isSelected: $isSelected,
+                color: .blue,
+                text: "Маникюр")
+            .onTapGesture {
+                isSelected.toggle()
                 
-                SelectedMaster(
-                    isSelected: $isSelected,
-                    color: .blue,
-                    text: "Маникюр")
-                .onTapGesture {
-                    isSelected.toggle()
-                    
-                    if isSelected {
-                        isSelected1 = false
-                        isSelected2 = false
-                    }
+                if isSelected {
+                    isSelected1 = false
+                    isSelected2 = false
                 }
+            }
+            
+            SelectedMaster(
+                isSelected: $isSelected1,
+                color: .brown,
+                text: "Педикюр")
+            .onTapGesture {
+                isSelected1.toggle()
                 
-                SelectedMaster(
-                    isSelected: $isSelected1,
-                    color: .brown,
-                    text: "Педикюр")
-                .onTapGesture {
-                    isSelected1.toggle()
-                    
-                    if isSelected1 {
-                        isSelected2 = false
-                        isSelected = false
-                    }
+                if isSelected1 {
+                    isSelected2 = false
+                    isSelected = false
                 }
+            }
+            
+            SelectedMaster(
+                isSelected: $isSelected2,
+                color: .orange,
+                text: "Наращивание")
+            .onTapGesture {
+                isSelected2.toggle()
                 
-                SelectedMaster(
-                    isSelected: $isSelected2,
-                    color: .elements(.Epink),
-                    text: "Наращивание")
-                .onTapGesture {
-                    isSelected2.toggle()
-
-                    if isSelected2 {
-                        isSelected1 = false
-                        isSelected = false
-                    }
+                if isSelected2 {
+                    isSelected1 = false
+                    isSelected = false
                 }
             }
         }
-       // .padding()
+        
     }
 }
 

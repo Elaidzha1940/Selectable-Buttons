@@ -30,6 +30,6 @@ struct SelectedMaster: View {
 struct SelectedMaster_Previews: PreviewProvider {
     static var previews: some View {
         
-            SelectedMaster(isSelected: .constant(false), color: .elements(.Epink), text: "")
+            SelectedMaster(isSelected: .constant(false), color: .blue, text: "")
     }
 }
