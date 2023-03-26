@@ -11,6 +11,7 @@
 		E4E4805729D063700017D7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E4805629D063700017D7BC /* ContentView.swift */; };
 		E4E4805929D063700017D7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E4805829D063700017D7BC /* Assets.xcassets */; };
 		E4E4805D29D063700017D7BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E4805C29D063700017D7BC /* Preview Assets.xcassets */; };
+		E4E4806429D064920017D7BC /* SelectedMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E4806329D064920017D7BC /* SelectedMaster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E4E4805829D063700017D7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E4805A29D063700017D7BC /* Selectable_Buttons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Selectable_Buttons.entitlements; sourceTree = "<group>"; };
 		E4E4805C29D063700017D7BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4E4806329D064920017D7BC /* SelectedMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E4E4805429D063700017D7BC /* Selectable_ButtonsApp.swift */,
 				E4E4805629D063700017D7BC /* ContentView.swift */,
+				E4E4806329D064920017D7BC /* SelectedMaster.swift */,
 				E4E4805829D063700017D7BC /* Assets.xcassets */,
 				E4E4805A29D063700017D7BC /* Selectable_Buttons.entitlements */,
 				E4E4805B29D063700017D7BC /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E4806429D064920017D7BC /* SelectedMaster.swift in Sources */,
 				E4E4805729D063700017D7BC /* ContentView.swift in Sources */,
 				E4E4805529D063700017D7BC /* Selectable_ButtonsApp.swift in Sources */,
 			);
