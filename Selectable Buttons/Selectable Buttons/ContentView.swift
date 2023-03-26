@@ -15,11 +15,11 @@ struct ContentView: View {
     
     var body: some View {
         
-        HStack(spacing: 5) {
+        VStack(spacing: 5) {
             
             SelectedMaster(
                 isSelected: $isSelected,
-                color: .blue,
+                color: .brown,
                 text: "Маникюр")
             .onTapGesture {
                 isSelected.toggle()
@@ -45,7 +45,7 @@ struct ContentView: View {
             
             SelectedMaster(
                 isSelected: $isSelected2,
-                color: .orange,
+                color: .brown,
                 text: "Наращивание")
             .onTapGesture {
                 isSelected2.toggle()

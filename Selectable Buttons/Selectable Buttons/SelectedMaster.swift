@@ -18,8 +18,8 @@ struct SelectedMaster: View {
         ZStack {
             
           Rectangle()
-                .frame(width: 110, height: 25)
-                .foregroundColor(isSelected ? color : .red)
+                .frame(width: 175, height: 55)
+                .foregroundColor(isSelected ? color : .orange)
                 .cornerRadius(13)
             Text(text)
                 .foregroundColor(.black)
