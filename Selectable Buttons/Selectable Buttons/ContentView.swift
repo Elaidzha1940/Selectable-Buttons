@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isSelected = false
+    @State private var isSelected1 = false
+    @State private var isSelected2 = false
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
