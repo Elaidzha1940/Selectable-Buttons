@@ -19,10 +19,10 @@ struct SelectedMaster: View {
             
           Rectangle()
                 .frame(width: 175, height: 55)
-                .foregroundColor(isSelected ? color : .orange)
+                .foregroundColor(isSelected ? color : .gray)
                 .cornerRadius(13)
             Text(text)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
         }
     }
 }

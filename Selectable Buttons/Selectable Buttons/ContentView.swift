@@ -20,7 +20,7 @@ struct ContentView: View {
             SelectedMaster(
                 isSelected: $isSelected,
                 color: .brown,
-                text: "Маникюр")
+                text: " + Button + ")
             .onTapGesture {
                 isSelected.toggle()
                 
@@ -33,7 +33,7 @@ struct ContentView: View {
             SelectedMaster(
                 isSelected: $isSelected1,
                 color: .brown,
-                text: "Педикюр")
+                text: "+ Button +")
             .onTapGesture {
                 isSelected1.toggle()
                 
@@ -46,7 +46,7 @@ struct ContentView: View {
             SelectedMaster(
                 isSelected: $isSelected2,
                 color: .brown,
-                text: "Наращивание")
+                text: "+ Button +")
             .onTapGesture {
                 isSelected2.toggle()
                 
