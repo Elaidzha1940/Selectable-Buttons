@@ -15,12 +15,50 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+          
+            HStack(spacing: 5) {
+                
+                SelectedMaster(
+                    isSelected: $isSelected,
+                    color: .elements(.Epink),
+                    text: "Маникюр")
+                .onTapGesture {
+                    isSelected.toggle()
+                    
+                    if isSelected {
+                        isSelected1 = false
+                        isSelected2 = false
+                    }
+                }
+                
+                SelectedMaster(
+                    isSelected: $isSelected1,
+                    color: .elements(.Epink),
+                    text: "Педикюр")
+                .onTapGesture {
+                    isSelected1.toggle()
+                    
+                    if isSelected1 {
+                        isSelected2 = false
+                        isSelected = false
+                    }
+                }
+                
+                SelectedMaster(
+                    isSelected: $isSelected2,
+                    color: .elements(.Epink),
+                    text: "Наращивание")
+                .onTapGesture {
+                    isSelected2.toggle()
+
+                    if isSelected2 {
+                        isSelected1 = false
+                        isSelected = false
+                    }
+                }
+            }
         }
-        .padding()
+       // .padding()
     }
 }
 
